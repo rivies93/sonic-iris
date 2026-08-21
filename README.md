@@ -49,12 +49,13 @@ float angleStep = TWO_PI * 0.61803398875;
 
 This avoids the strong visual repetition produced by simple angular increments.
 
-Requirements:
+## Requirements:
 
-    -Processing 3
-    -Minim library
-    -Video Export library
-    -Installing Minim
+- Processing 3
+- Minim library
+- Video Export library
+    
+### Installing Minim
 
 Minim is included with Processing in many installations. If it is not available,
 install it through:
@@ -64,7 +65,7 @@ install it through:
 Search for:
 
     Minim
-Installing Video Export
+### Installing Video Export
 
 Install:
 
@@ -73,13 +74,13 @@ Install:
 Search for:
 
     Video Export
-Usage:
+## Usage:
 
-    -Open EyeSpectrum.pde in Processing 3.
-    -Run the sketch.
-    -Select an audio file when prompted.
-    -The visualization will start automatically.
-    -The generated files will be saved in the Processing sketch directory.
+1. Open EyeSpectrum.pde in Processing 3.
+2. Run the sketch.
+3. Select an audio file when prompted.
+4. The visualization will start automatically.
+5. The generated files will be saved in the Processing sketch directory.
 
 For example:
 
@@ -89,7 +90,7 @@ produces:
 
     song_eye_spectrum.png
 
-Audio files
+## Audio files
 
 The audio file does not need to be included in the repository.
 
@@ -99,69 +100,62 @@ audio file from your computer.
 Do not upload copyrighted music to this repository unless you have permission
 to redistribute it.
 
-Output
+## Output
 
 The generated image has the same dimensions as the Processing sketch.
 
-The video is generated from the same animation frames displayed by the sketch.
 
-The video frame rate is calculated from:
-
-    sampleRate / FFT size
-
-so that each FFT window corresponds to one animation frame.
-
-Customization
+## Customization
 
 The main parameters can be modified near the beginning of the sketch.
 
-FFT size
+### FFT size
 
     int fftSize = 2048;
 
 Larger values provide greater frequency resolution but fewer FFT windows per
 second.
 
-Circle radius
+### Circle radius
     
     float r = 200;
     
-Angular step
+### Angular step
 
     float angleStep = TWO_PI * 0.61803398875;
 
 The current value uses the inverse of the golden ratio.
 
-License
+## License
 
-This project is released under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 See LICENSE for details.
 
-Third-party libraries
+## Third-party libraries
 
 This project uses third-party libraries:
 
-Minim — audio playback and FFT analysis
-Video Export — MP4 video export
+- Minim — audio playback and FFT analysis
+- Video Export — MP4 video export
 
 These libraries are distributed under their respective licenses.
 
 Please refer to their official repositories/documentation for licensing
 information.
 
-Author
+## Author
 
-    Ricardo Villagómez
+Ricardo Villagómez
 
-Contributing
+## Contributing
 
-    Suggestions, improvements and pull requests are welcome.
+Suggestions, improvements and pull requests are welcome.
 
 If you find a bug, please open an issue with:
 
-    Processing version
-    Operating system
-    Audio format
-    FFT size
-    Error message
+- Processing version
+- Operating system
+- Audio format
+- FFT size
+- Error message
