@@ -146,7 +146,7 @@ information.
 
 ## Author
 
-Ricardo Villagómez
+Created by [Ricardo Villagómez](https://github.com/rivies93).
 
 ## Contributing
 
