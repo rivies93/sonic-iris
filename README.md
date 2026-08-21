@@ -76,7 +76,7 @@ Search for:
     Video Export
 ## Usage:
 
-1. Open EyeSpectrum.pde in Processing 3.
+1. Open SonicIris.pde in Processing 3.
 2. Run the sketch.
 3. Select an audio file when prompted.
 4. The visualization will start automatically.
